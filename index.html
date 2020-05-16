@@ -13,47 +13,132 @@
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:500.700'>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/typer.css">
+  <link rel="stylesheet" href="./css/popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
 
 </head>
-<body>
-<!-- partial:index.partial.html -->
 
-<titel>
-  <div class = "typer-container">
-    <h1>
-      Hi I'm 
 
-      <!--words we want to have typed out-->
-      <span class="txt-type" data-wait="4000" data-words='["Andrew", "a developer", "a student", "an engineer"]'></span>
-    </h1>
-  </div>
-</titel>
 
+
+<!-- typing animation -->
+<div class = "typer-container">
+  <h1>
+    Hi I'm 
+
+    <!--words we want to have typed out-->
+    <span class="txt-type" data-wait="4000" data-words='["Andrew", "a developer", "a student", "an engineer"]'></span>
+  </h1>
+</div>
+
+
+
+
+<!--the cards-->
 <div id = card-container>
 
   <div id="app" class="container">
-    <card data-image="contents/images/about.jpg">
-      
-      <h1 slot="header">About</h1>
-      <p slot="content">More about me</p>
-    </card>
-    <card data-image="contents/images/resume.png">
-      <h1 slot="header">Resume</h1>
-      <p slot="content">PDF of my resume</p>
-    </card>
-    <card data-image="contents/images/projects.jpg">
-      <h1 slot="header">Projects</h1>
-      <p slot="content">Compilation of my work</p>
-    </card>
-    <card data-image="contents/images/contact.jpg">
-      <h1 slot="header">Contact</h1>
-      <p slot="content">Let's get in touch!</p>
-    </card>
+    <a href = "#pop1">
+      <card data-image="contents/images/about.jpg">
+        <h1 slot="header">About</h1>
+        <p slot="content">More about me</p>
+      </card>
+    </a>
+    <a href = "#pop2">
+      <card data-image="contents/images/resume.png">
+        <h1 slot="header">Resume</h1>
+        <p slot="content">PDF of my resume</p>
+      </card>
+    </a>
+    <a href = "#pop3">
+      <card data-image="contents/images/projects.jpg">
+        <h1 slot="header">Projects</h1>
+        <p slot="content">Compilation of my work</p>
+      </card>
+    </a>
+    <a href = "#pop4">
+      <card data-image="contents/images/contact.jpg">
+        <h1 slot="header">Contact</h1>
+        <p slot="content">Let's get in touch!</p>
+      </card>
+    </a>
   </div>
 
 </div>
 
-<!-- partial -->
+
+
+<div id = "pop1" class = "pop-overlay">
+  <div class="popup">
+		<h2>Who am I?</h2>
+		<a class="close" href="">&times;</a>
+		<div class="content">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+		</div>
+	</div>
+</div>
+
+<div id = "pop2" class = "pop-overlay">
+  <div class="popup">
+		<h2>My resume</h2>
+		<a class="close" href="">&times;</a>
+		<div class="content">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+		</div>
+	</div>
+</div>
+
+<div id = "pop3" class = "pop-overlay">
+  <div class="popup">
+		<h2>A compilation of my works</h2>
+		<a class="close" href="">&times;</a>
+		<div class="content">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+		</div>
+	</div>
+</div>
+
+<div id = "pop4" class = "pop-overlay">
+  <div class="popup">
+		<h2>Let's get in touch!</h2>
+		<a class="close" href="">&times;</a>
+		<div class="content">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- javascript -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
   <script  src= "./src/script.js"></script>
   <script src = "./src/typer.js"></script>
