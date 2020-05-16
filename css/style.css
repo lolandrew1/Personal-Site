@@ -23,7 +23,6 @@ body {
   }
   
   .container {
-    padding: 40px 80px;
     display: flex;
     flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -145,5 +144,6 @@ body {
   }
 
   #card-container{
-    margin-top:50px;
+    margin-top:80px;
+    width:100vw;
   }

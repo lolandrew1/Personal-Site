@@ -2,7 +2,7 @@
 .typer-container {
   width: 100vw;
   height: 30px;
-  margin-top:7%;
+  margin-top:100px;
   display: flex;
   /* Remove horizontal 'justify-content' center if you want the base text not to move */
   justify-content: center;

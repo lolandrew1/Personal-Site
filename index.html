@@ -27,7 +27,7 @@
     Hi I'm 
 
     <!--words we want to have typed out-->
-    <span class="txt-type" data-wait="3500" data-words='["Andrew", "a developer", "a student", "an engineer"]'></span>
+    <span class="txt-type" data-wait="4000" data-words='["Andrew", "a developer", "a student", "an engineer"]'></span>
   </h1>
 </div>
 
@@ -38,25 +38,25 @@
 <div id = card-container>
 
   <div id="app" class="container">
-    <a href = "#pop1">
+    <a href = "#about">
       <card data-image="contents/images/about.jpg">
         <h1 slot="header">About</h1>
         <p slot="content">More about me</p>
       </card>
     </a>
-    <a href = "#pop2">
+    <a href = "#resume">
       <card data-image="contents/images/resume.png">
         <h1 slot="header">Resume</h1>
         <p slot="content">PDF of my resume</p>
       </card>
     </a>
-    <a href = "#pop3">
+    <a href = "#projects">
       <card data-image="contents/images/projects.jpg">
         <h1 slot="header">Projects</h1>
         <p slot="content">Compilation of my work</p>
       </card>
     </a>
-    <a href = "#pop4">
+    <a href = "#contact">
       <card data-image="contents/images/contact.jpg">
         <h1 slot="header">Contact</h1>
         <p slot="content">Let's get in touch!</p>
@@ -67,80 +67,74 @@
 </div>
 
 
+<div class = "popup-container">
 
-<div id = "pop1" class = "pop-overlay">
-  <article class="popup">
-		<h2>Who am I?</h2>
-		<a class="close" href="">&times;</a>
-		<div class="pop-content">
-      I am an incoming first-year student at Carnegie Mellon University studying computer science, statistics, and machine learning. 
-      I am passionate about software development and data analysis and constantly seek ways in which to apply my skills to benefit others. 
-      <br>
-      <br>
-      Since writing my first python script to automate day-to-day digital tasks, I've become fascinated by the far-reaching impacts of computer software. 
-      As I've grown in my knowledge of computer science, I've become increasingly baffled by the applications of machine learning and its potential to improve the lives of everyone.
-      <br>
-      <br>
-      Feel free to browse this website for as long as you wish, and I hope we'll be able to connect down the road!
-      <br>
-      <br>
-      - Andrew Wang
+  <div id = "about" class = "pop-overlay">
+    <div class = "pop-background"></div>
+    <div class="popup">
+      
+      <h2>Who am I?</h2>
+      <a class="close" href="">&times;</a>
+        <div class="pop-content">
+          I am an incoming first-year student at Carnegie Mellon University studying computer science, statistics, and machine learning. 
+          I am passionate about software development and data analysis and constantly seek ways in which to apply my skills to benefit others. 
+          <br>
+          <br>
+          Since writing my first python script to automate my day-to-day digital tasks, I've become fascinated by the far-reaching impacts of software. 
+          As I've grown in my knowledge of computer science, I've become increasingly baffled by the applications of machine learning and its potential to improve the lives of all.
+          <br>
+          <br>
+          Feel free to browse this website for as long as you wish, and I hope we'll be able to connect down the road!
+          <br>
+          <br>
+          - Andrew Wang
+          <br>
+          <br>
+        </div>
     </div>
-</div>
+  </div>
 
-<div id = "pop2" class = "pop-overlay">
-  <div class="popup">
-		<h2>My resume</h2>
-		<a class="close" href="">&times;</a>
-		<div class="pop-content">
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-		</div>
-	</div>
-</div>
+  <div id = "resume" class = "pop-overlay">
+    <div class="popup">
+      <h2>My resume</h2>
+      <a class="close" href="">&times;</a>
+      <div class="pop-content">
 
-<div id = "pop3" class = "pop-overlay">
-  <div class="popup">
-		<h2>A compilation of my works</h2>
-		<a class="close" href="">&times;</a>
-		<div class="pop-content">
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-		</div>
-	</div>
-</div>
-
-<div id = "pop4" class = "pop-overlay">
-  <div class="popup">
-		<h2>Let's get in touch!</h2>
-		<a class="close" href="">&times;</a>
-		<div class="pop-content">
-      <div class = "indent">
-        <i class="far fa-envelope"></i> &nbsp; &nbsp;&nbsp;<a href = "mailto:azwang@andrew.cmu.edu">azwang@andrew.cmu.edu</a>
       </div>
+    </div>
+  </div>
 
-      <br>
-      <br>
+  <div id = "projects" class = "pop-overlay">
+    <div class="popup">
+      <h2>A compilation of my works</h2>
+      <a class="close" href="">&times;</a>
+      <div class="pop-content">
 
-      <div class = "indent">
-        <i class="fab fa-linkedin"></i> &nbsp; &nbsp;&nbsp; <a href = "https://www.linkedin.com/in/az-wang/">https://www.linkedin.com/in/az-wang/</a>
       </div>
-		</div>
-	</div>
-</div>
+    </div>
+  </div>
 
+  <div id = "contact" class = "pop-overlay">
+    <div class="popup">
+      <h2>Let's get in touch!</h2>
+      <a class="close" href="">&times;</a>
+      <div class="pop-content">
+        
+        <div class = "indent">
+          <i class="far fa-envelope"></i> &nbsp; &nbsp;&nbsp;<a href = "mailto:azwang@andrew.cmu.edu">azwang@andrew.cmu.edu</a>
+        </div>
+
+        <br>
+        <br>
+
+        <div class = "indent">
+          <i class="fab fa-linkedin"></i> &nbsp; &nbsp;&nbsp; <a href = "https://www.linkedin.com/in/az-wang/">https://www.linkedin.com/in/az-wang/</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
 
 <!-- javascript -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
