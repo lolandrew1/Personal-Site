@@ -1,13 +1,13 @@
 .pop-box {
   width: 50%;
-  height:500px;
+  height:80%;
   margin: 0 auto;
-  background: rgba(255,255,255,0.2);
-  padding: 35px;
   border: 2px solid #fff;
   border-radius: 20px/50px;
   background-clip: padding-box;
   text-align: center;
+
+  background: rgba(255,255,255,0.2);
 }
 
 
@@ -26,6 +26,23 @@
   visibility: visible;
   opacity: 1;
 }
+.pop-content {
+  padding-top:60px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-bottom:60px;
+  font-family: "Arial";
+  font-size: 20px;
+  line-height:27px;
+}
+
+.pop-content .indent{
+  text-indent:20px;
+}
+
+a{
+  color:#000;
+}
 
 .popup {
   margin: 70px auto;
@@ -38,9 +55,12 @@
 }
 
 .popup h2 {
-  margin-top: 0;
+  margin-top: 10px;
+  margin-left:20px;
   color: #333;
-  font-family: Tahoma, Arial, sans-serif;
+  font-family: "Arial";
+  font-size: 32px;
+  font-weight:700;
 }
 .popup .close {
   position: absolute;
@@ -60,11 +80,3 @@
   overflow: auto;
 }
 
-@media screen and (max-width: 900px){
-  .pop-box{
-    width: 100%;
-  }
-  .popup{
-    width: 100%;
-  }
-}
