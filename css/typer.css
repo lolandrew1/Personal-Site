@@ -1,0 +1,29 @@
+/* ALIGN CONTENT */
+.typer-container {
+  width: 100vw;
+  height: 30px;
+  margin-top:7%;
+  display: flex;
+  /* Remove horizontal 'justify-content' center if you want the base text not to move */
+  justify-content: center;
+  align-items: center;
+  font-size:30px;
+}
+
+/* ADD CURSOR */
+.txt-type > .txt {
+  border-right: 0.08rem solid #000;
+  padding-right: 2px;
+  /* Animating the cursor */
+  animation: blink 0.8s infinite;
+}
+
+/* ANIMATION */
+@keyframes blink {
+  0% {
+    border-right: 0.08rem solid rgba(0, 0, 0, 1);
+  }
+  100% {
+    border-right: 0.08rem solid rgba(255,248,237, 1);
+  }
+}
