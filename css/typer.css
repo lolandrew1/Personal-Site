@@ -15,7 +15,7 @@
   border-right: 0.08rem solid #000;
   padding-right: 2px;
   /* Animating the cursor */
-  animation: blink 0.8s infinite;
+  animation: blink 1.0s infinite;
 }
 
 /* ANIMATION */
