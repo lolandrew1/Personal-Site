@@ -1,0 +1,109 @@
+.pop-box {
+  width: 50%;
+  height:80%;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+
+  background: rgba(255,255,255,0.2);
+}
+
+
+.pop-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:0px;
+  width:100vw;  
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.pop-overlay:target {
+  visibility: visible;
+  height:70vh;
+  opacity: 1;
+}
+
+.pop-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:100vh;
+  width:100vw;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+
+.pop-content {
+  padding-top:40px;
+  padding-left:20px;
+  padding-right:20px;
+  font-family: "Arial";
+  font-size: 20px;
+  line-height:27px;
+}
+
+
+.pop-content .indent{
+  text-indent:20px;
+}
+
+a{
+  color:#000;
+}
+
+.popup {
+  margin: 60px auto;
+  padding-top:20px;
+  padding-left:20px;
+  padding-right:20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  height:110%;
+  position: relative;
+  transition: all 2s ease-in-out;
+
+  overflow:scroll;
+}
+
+
+.popup h2 {
+  margin-top: 10px;
+  margin-left:20px;
+  color: #333;
+  font-family: "Arial";
+  font-size: 32px;
+  font-weight:700;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #b0b0b0;
+}
+
+
+@media screen and (max-width: 1000px){
+  .pop-box{
+    width: 90%;
+  }
+  .popup{
+    width: 80%;
+    height: 100%;
+  }
+}
